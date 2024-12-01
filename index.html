@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Make your own frame</title>
+  </head>
+
+  <body>
+    <div class="toolbar">
+      <!-- Text Controls -->
+      <div class="toolbar-partOne">
+        <input type="text" id="text-input" placeholder="Enter text" />
+        <select id="font-select">
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+        </select>
+        <input type="color" id="color-picker" />
+        <button id="add-text-btn">Add Text</button>
+      </div>
+      <div class="toolbar-partTwo">
+        <!-- Background Color -->
+        <label class="background-layout">Background:</label>
+        <input type="color" id="bg-color-picker" />
+      </div>
+      <div class="toolbar-partThird">
+        <!-- Picture Upload -->
+        <label cla>Select Your BackGround:</label>
+        <input type="file" id="image-upload" accept="image/*" />
+      </div>
+      <div class="Toolbar-partFourth">
+        <!-- Sticker Upload -->
+        <label>Select Your Sticker:</label>
+        <input type="file" id="sticker-upload" accept="image/*" />
+      </div>
+      <div class="toolbar-PartFifth">
+        <!-- Undo/Redo -->
+        <button id="undo-btn">Undo</button>
+        <button id="redo-btn">Redo</button>
+      </div>
+    </div>
+    <canvas id="canvas" width="500" height="600"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
